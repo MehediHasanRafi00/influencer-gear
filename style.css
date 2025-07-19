@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+/* nav section  */
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 85px;
+}
+nav h1 {
+  color: #3a3a3a;
+}
+
+nav ul {
+  display: flex;
+  gap: 34px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+/* hero section */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-top: 50px;
+}
+.hero-section-info {
+  max-width: 580px;
+  color: #3a3a3a;
+}
+.hero-section-info h2 {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+.hero-section-info p {
+  font-weight: 600;
+  margin: 16px 0;
+}
+.hero-section-info button {
+  background-color: #e02c6d;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 41px;
+  border: none;
+}
+.hero-section-img {
+  background-image: url(./images/Circle\ design.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* brand section */
+
+.brand {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 70px;
+  border-top: 1px solid rgba(192, 204, 218, 0.1);
+  border-bottom: 1px solid rgba(192, 204, 218, 0.1);
+}
+.brand img {
+  padding: 25px 0px;
+}
+
+/* product section */
+.product {
+  margin-top: 100px;
+}
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  text-align: center;
+}
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.product-card {
+  padding: 25px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.product-card img {
+  width: 100%;
+}
+.product-card h3 {
+  font-size: 1.75rem;
+  color: rgb(24, 25, 31);
+  font-weight: 500;
+}
+.product-card p {
+  font-weight: 700;
+  color: rgb(120, 120, 133);
+  max-width: 240px;
+}
+.product-price {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.stars {
+  color: rgb(251, 130, 0);
+}
+.product-reting {
+  color: rgb(120, 120, 133);
+  font-weight: 700;
+}
+.see-more {
+  text-align: right;
+  margin-top: 50px;
+}
+.see-more a {
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+/* feature products section  */
+
+.feature-products {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.feature-products img {
+  width: 100%;
+}
+.feature-products-info h2 {
+  color: rgb(10, 8, 38);
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.feature-products-info p {
+  max-width: 550px;
+  color: rgb(108, 108, 108);
+  font-weight: 700;
+  margin: 16px 0;
+}
+.feature-products-info button {
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* footer section  */
+footer {
+  background-color: #0a0826;
+  color: white;
+  padding: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+footer h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+footer p {
+  font-weight: 700;
+}
+
+.social-link a {
+  height: 32px;
+  width: 32px;
+  margin: 17px 22px;
+  color: white;
+  background-color: #23213c;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .hero-section,
+  .feature-products {
+    flex-direction: column-reverse;
+  }
+  nav {
+    padding-top: 35px;
+  }
+  .hero-section {
+    text-align: center;
+  }
+  header,
+  main {
+    padding: 0 20px;
+  }
+  .brand {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-products {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+  .hero-section,
+  .feature-products {
+    flex-direction: column-reverse;
+  }
+  nav {
+    padding-top: 50px;
+  }
+  .hero-section {
+    text-align: center;
+  }
+  header,
+  main {
+    padding: 0 20px;
+  }
+
+  .brand {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-products {
+    text-align: center;
+  }
+}
